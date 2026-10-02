@@ -1,148 +1,141 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="furryhk.cn 个人邮箱服务使用条款">
-    <title>个人邮箱服务使用条款 - FurryHK</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: system-ui, -apple-system, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 40px 20px;
-            color: #111;
-            line-height: 1.8;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: rgba(255,255,255,0.75);
-            backdrop-filter: blur(30px);
-            border-radius: 24px;
-            padding: 40px;
-            border: 1px solid rgba(255,255,255,0.3);
-        }
-        .back-btn {
-            display: inline-block;
-            margin-bottom: 30px;
-            padding: 8px 18px;
-            background: rgba(255,255,255,0.3);
-            border-radius: 12px;
-            color: #222;
-            text-decoration: none;
-            border: 1px solid rgba(255,255,255,0.4);
-        }
-        h1 {
-            font-size: 26px;
-            margin-bottom: 10px;
-        }
-        .meta {
-            color: #555;
-            padding-bottom: 20px;
-            border-bottom: 1px solid rgba(0,0,0,0.1);
-            margin-bottom: 30px;
-        }
-        h2 {
-            font-size: 19px;
-            margin: 30px 0 10px;
-        }
-        p, li {
-            color: #333;
-            margin-bottom: 10px;
-        }
-        ul {
-            padding-left: 22px;
-        }
-        .end-note {
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(0,0,0,0.1);
-            font-weight: 500;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="FurryHK 免费个人邮箱使用条款：申请与安全、账号回收、隐私与数据、注销与申诉。">
+<meta name="color-scheme" content="light dark">
+<title>邮箱使用条款 · FurryHK</title>
+<style>
+:root{color-scheme:light dark;--bg:light-dark(#f2eef4,#17141c);--page:light-dark(#f9f7f2,#201f26);--text:light-dark(#393343,#eee9f4);--muted:light-dark(#706078,#c0b0cb);--line:light-dark(#e8e1eb,#453a4e);--soft:light-dark(#eee7f2,#352c3e);--accent:light-dark(#806291,#c5a3d9)}
+*{box-sizing:border-box}
+html{background:#f2eef4;background:var(--bg);scroll-behavior:smooth;scroll-padding-top:20px}
+body{margin:0;color:#393343;color:var(--text);font-family:system-ui,-apple-system,"Microsoft YaHei",sans-serif;line-height:1.85;padding:max(28px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) max(36px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));overflow-wrap:anywhere}
+a{color:var(--accent);text-underline-offset:4px;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+a:focus-visible{outline:2px solid #ad8bc6;outline-offset:4px;border-radius:4px}
+button{font:inherit;cursor:pointer;touch-action:manipulation}
+.page{max-width:820px;margin:auto;padding:36px;border:1px solid var(--line);border-radius:24px;background:radial-gradient(ellipse at 100% 0%,light-dark(#eee5f5,#32273c),transparent 36%),var(--page);box-shadow:0 24px 70px light-dark(#49335d1b,#00000040),inset 0 1px 0 light-dark(#ffffff,#51415e)}
+.top{display:flex;justify-content:space-between;gap:16px;font-size:12px;letter-spacing:.08em;color:var(--muted);margin-bottom:36px}
+.brand{text-decoration:none;font-weight:650;color:var(--accent)}
+.back{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;border:1px solid var(--line);border-radius:12px;background:light-dark(#fffefa,#2b2831);text-decoration:none;color:inherit;font-size:13px;transition:transform .2s ease}
+.back:active{transform:scale(.98)}
+.eyebrow{font-size:12px;color:var(--muted);margin:26px 0 7px;letter-spacing:.08em}
+h1{margin:0;font-size:clamp(27px,5vw,36px);line-height:1.3;font-weight:650;letter-spacing:-.04em}
+.lead{margin:12px 0 20px;color:var(--muted);font-size:15px}
+.meta{display:flex;flex-wrap:wrap;gap:7px 18px;font-size:12px;color:var(--muted);margin-bottom:24px}
+.notice{padding:18px 20px;border:1px solid light-dark(#d6c5df,#66516e);border-radius:16px;background:var(--soft);font-size:14px}
+.notice p{margin:7px 0 0}
+.notice strong{font-weight:650}
+.toc{margin:28px 0 34px;padding:20px;border-radius:16px;border:1px solid var(--line);background:light-dark(#fffefa,#2b2831)}
+.toc h2{margin:0 0 12px;font-size:14px}
+.toc-links{display:grid;grid-template-columns:1fr 1fr;gap:6px 18px}
+.toc a{display:flex;align-items:center;min-height:38px;text-decoration:none;font-size:13px;padding:3px 0}
+article section{padding:24px 0;border-top:1px solid var(--line);scroll-margin-top:20px}
+article h2{font-size:18px;line-height:1.5;margin:0 0 14px;font-weight:650}
+article p,article li{font-size:14px;margin:10px 0;color:inherit}
+article ul{padding-left:22px;margin:12px 0}
+.important{font-weight:600;color:var(--accent)}
+.help{padding:20px;border-radius:16px;background:var(--soft);margin-top:24px}
+.help h2{font-size:16px;margin:0 0 8px}
+.help p{font-size:13px;color:var(--muted);margin:8px 0}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.actions a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:9px 16px;border-radius:12px;text-decoration:none;font-size:13px;background:light-dark(#806291,#aa88be);color:light-dark(#fff,#24172e)}
+.actions .secondary{background:light-dark(#fffefa,#2b2831);color:inherit;border:1px solid var(--line)}
+footer{font-size:11px;color:var(--muted);text-align:center;margin:28px 0 0}
+@media(max-width:560px){body{padding:12px 10px 24px}.page{padding:24px 20px}.top{margin-bottom:26px}.notice{padding:16px}.toc{padding:16px}.toc-links{grid-template-columns:1fr}article section{padding:22px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
 </head>
 <body>
-    <div class="container">
-        <a href="https://furryhk.cn" class="back-btn">← 返回主页</a>
-        <h1>furryhk.cn 个人邮箱服务使用条款</h1>
-        <div class="meta">
-            <p><strong>生效日期：</strong>2026年06月24日</p>
-            <p><strong>最后更新日期：</strong>2026年06月24日</p>
-            <p>使用本邮箱即表示您已阅读并同意《furryhk.cn 个人邮箱服务使用条款》。 如不同意本条款，请停止使用本服务，并联系管理员申请注销邮箱账号。 管理员邮箱：furryhk@furryhk.cn</p>
-        </div>
-        <p>欢迎使用 furryhk.cn 个人邮箱服务。本服务由 furryhk.cn 域名持有人基于阿里云企业邮箱系统搭建，为用户提供后缀为 @furryhk.cn 的电子邮箱服务。</p>
-        <p>您注册、登录并使用本服务，即视为您已充分阅读、理解并同意本条款全部内容，同时确认您已知晓并同意遵守《阿里云企业邮箱产品服务条款》《阿里云反垃圾邮件管理规范》及阿里云平台全部相关规则。如您不同意本条款或阿里云相关规则，请勿使用本服务。</p>
-        <h2>一、服务概述</h2>
-        <p>1. 本服务底层技术能力由阿里云企业邮箱提供，支持Web端登录、客户端（POP3/IMAP/SMTP）收发、邮件存储、通讯录管理等基础功能，单账号存储空间、功能权限以账号开通时的实际配置为准。</p>
-        <p>2. 本服务仅面向合法合规使用的个人及主体开放，服务提供方有权根据运营规则，自主决定账号的开通、变更、暂停与终止。</p>
-        <p>3. 您理解并同意：阿里云侧的系统升级、架构调整、规则更新等属于底层服务正常运营行为，因此导致的服务功能或规则变动，服务提供方将同步告知，但不单独承担违约责任。</p>
-        <h2>二、账号管理与安全</h2>
-        <p>1. 申请本邮箱账号需提供真实、有效的身份信息，不得冒用他人身份、使用虚假资料注册。</p>
-        <p>2. 邮箱账号所有权归 furryhk.cn 域名持有人所有，用户仅获得账号使用权；账号仅限注册本人使用，禁止以任何形式转让、出借、售卖、共享、继承账号或账号使用权。</p>
-        <p>3. 用户需妥善保管账号密码与登录凭证，对账号下的全部操作行为及产生的后果承担全部责任。如发现账号被盗用、异常登录等情况，应立即修改密码并联系管理员；因保管不善、操作不当导致的账号损失及数据风险，由用户自行承担。</p>
-        <p>4. 账号连续180天（6个月）无任何登录使用记录，服务提供方有权对账号进行回收清理，回收后账号内所有邮件数据将永久删除且无法恢复，规则与阿里云企业邮箱闲置账号机制保持一致。</p>
-        <h2>三、用户使用规范</h2>
-        <p>用户在使用本服务过程中，必须严格遵守国家法律法规、公序良俗，以及阿里云反垃圾邮件相关规则，不得实施以下行为：</p>
-        <p>1. 违法违规内容传播：利用邮箱发送、存储、传播危害国家安全、泄露国家秘密、淫秽色情、暴力恐怖、赌博诈骗、造谣诽谤、教唆犯罪等违反法律法规的内容。</p>
-        <p>2. 违规发信行为：</p>
-        <ul>
-            <li>未经收件人明确同意，批量发送商业广告、推广营销类垃圾邮件；</li>
-            <li>发送钓鱼邮件、病毒邮件、木马邮件、连锁转发类邮件，或伪造发件人信息、篡改邮件头信息；</li>
-            <li>利用本邮箱账号注册、绑定其他平台发送垃圾信息，或作为垃圾邮件的退信地址；</li>
-            <li>实施任何可能损害域名发信信誉、触发阿里云反垃圾拦截、被第三方平台标记为垃圾信源的行为。</li>
-        </ul>
-        <p>3. 侵权行为：利用邮箱侵犯他人知识产权、隐私权、名誉权等合法权益，包括但不限于未经授权传播他人受版权保护的作品、泄露他人个人隐私信息。</p>
-        <p>4. 干扰服务运行：破解、攻击邮箱系统，利用系统漏洞获取非授权数据，批量爆破账号，恶意占用系统资源，或干扰其他用户正常使用本服务。</p>
-        <p>5. 非法经营活动：利用邮箱从事传销、非法集资、虚假交易、非法金融等违法经营活动，或为违法活动提供通讯支持。</p>
-        <p>6. 其他违反阿里云服务规则、行业规范及本条款约定的行为。</p>
-        <h2>四、服务运营与变更</h2>
-        <p>1. 服务提供方有权根据实际运营需求，调整邮箱存储空间、功能权限、服务规则等内容；若涉及重大服务变更，将提前通过邮箱公告、系统通知等方式告知用户。</p>
-        <p>2. 因系统维护、版本升级、故障排查等原因导致服务暂时中断的，服务提供方将尽量提前告知并尽快恢复服务；常规计划性维护导致的短时服务中断，不构成违约。</p>
-        <p>3. 因阿里云侧服务调整、规则更新导致本服务功能或使用规则发生变化的，服务提供方有权同步调整本服务规则，用户继续使用服务即视为接受调整。</p>
-        <h2>五、隐私与数据安全</h2>
-        <p>1. 服务提供方严格保护用户隐私与邮件数据安全，不会擅自查看、泄露、披露用户的邮件内容及个人注册信息，仅在以下法定情形中依规处理：</p>
-        <ul>
-            <li>获得用户本人明确书面授权；</li>
-            <li>应司法机关、行政机关等有权部门依照法定程序提出的要求；</li>
-            <li>为维护系统安全、公共利益及服务提供方合法权益所必需；</li>
-            <li>符合阿里云官方数据处理规则的法定情形。</li>
-        </ul>
-        <p>2. 本服务所有邮件数据存储于阿里云境内合规数据中心，数据安全保护遵循阿里云隐私政策与数据安全管理规范，底层数据安全保障能力以阿里云官方承诺为准。</p>
-        <p>3. 账号注销、被回收或服务终止后，服务提供方有权按照阿里云数据清理规则删除账号内全部数据，且无义务为用户保留或恢复数据。</p>
-        <h2>六、违规处理</h2>
-        <p>1. 若用户违反本条款或阿里云相关服务规则，服务提供方有权视情节轻重，单方采取警告、限制邮件外发权限、暂停服务、封禁账号、删除账号及对应数据等措施，且无需提前通知、不承担任何责任。</p>
-        <p>2. 因用户的违规行为导致本域名被阿里云限制发信、封禁服务，或给服务提供方、第三方造成损失的，用户需承担全部赔偿责任（包括但不限于服务损失、域名信誉损失、维权费用等）。</p>
-        <p>3. 若用户的行为涉嫌违法犯罪，服务提供方将保留向相关部门举报并配合调查的权利。</p>
-        <h2>七、服务终止</h2>
-        <p>1. 用户可主动向管理员申请注销账号，账号注销后使用权即时终止，数据将按规则清理。</p>
-        <p>2. 出现以下任一情形时，服务提供方可单方终止向用户提供服务：</p>
-        <ul>
-            <li>用户严重违反本条款或阿里云相关服务规则；</li>
-            <li>阿里云停止提供底层企业邮箱服务；</li>
-            <li>域名到期、服务运营调整等客观原因导致服务无法继续提供。</li>
-        </ul>
-        <p>3. 若本服务整体终止运营，服务提供方将提前15天通过邮箱公告、系统通知等方式告知用户，请用户及时备份个人邮件数据；逾期未备份导致的数据丢失，服务提供方不承担责任。</p>
-        <h2>八、免责声明</h2>
-        <p>1. 因不可抗力（包括但不限于自然灾害、网络运营商故障、监管政策调整、黑客攻击）导致服务中断或数据丢失的，服务提供方不承担赔偿责任。</p>
-        <p>2. 因用户自身操作失误、密码泄露、终端设备故障导致的损失，由用户自行承担。</p>
-        <p>3. 本服务按"现状"提供，服务提供方不对邮件送达率、存储稳定性做超出阿里云官方SLA（服务等级协议）标准的承诺；因阿里云侧服务故障导致的损失，服务提供方仅负责协助用户向阿里云反馈，不承担超出阿里云官方赔付范围的责任。</p>
-        <p>4. 因收件方邮箱服务商拦截、拒收等非本服务原因导致邮件无法正常送达的，服务提供方不承担责任。</p>
-        <h2>九、未成年人使用</h2>
-        <p>1. 未满十八周岁的用户，应当在监护人同意和指导下阅读本条款并使用本邮箱服务。</p>
-        <p>2. 若未成年人使用本服务，视为其已获得监护人的许可，监护人应对未成年人的使用行为及产生的全部后果承担监督及负责义务。</p>
-        <h2>十、附则</h2>
-        <p>1. 服务提供方有权根据运营需求及阿里云规则更新修订本条款，修订后的条款将通过邮箱公告发布，用户继续使用服务即视为同意修订后的内容。</p>
-        <p>2. 因本条款产生的争议，双方应友好协商解决；协商不成的，依法向有管辖权的人民法院提起诉讼。</p>
-        <p>3. 账号申请、问题反馈、申诉等相关事宜，请联系管理员邮箱：furryhk@furryhk.cn</p>
-        <div class="end-note">
-            本条款最终更新时间：2026年06月24日<br>
-            furryhk.cn 保留本服务条款的最终解释权。
-        </div>
-    </div>
+<main class="page" id="top">
+  <header class="top"><a class="brand" href="https://furryhk.cn">悦悦的扩条</a><span>FURRYHK.CN</span></header>
+  <a class="back" href="https://furryhk.cn">← 返回主页</a>
+  <div class="terms-intro">
+    <p class="eyebrow">FURRYHK · MAIL</p>
+    <h1>邮箱使用条款</h1>
+    <p class="lead">一个属于你的 @furryhk.cn 邮箱。<br>在开始使用前，也请了解我们彼此的约定。</p>
+    <div class="meta"><span>本版发布：2026 年 10 月 3 日</span><span>本版生效：2026 年 10 月 18 日</span><span>初版生效：2026 年 6 月 24 日</span></div>
+    <aside class="notice" aria-label="重要事项">
+      <strong>请先留意这些事项</strong>
+      <p>目前免费、人工审核开通；请自行备份重要邮件。连续 180 天无登录或使用记录的账号，可能在通知后回收。删除账号可能导致邮件无法恢复，具体恢复能力取决于实际邮箱版本。</p>
+      <p>本次修订设置 15 天公示期，不追溯处理此前的使用行为。生效前已有用户仍适用原条款；如对修订有异议，请联系管理员沟通或申请注销。</p>
+    </aside>
+  </div>
+  <nav class="toc" aria-label="条款目录">
+    <h2>快速查看</h2>
+    <div class="toc-links"><a href="#service">01 · 服务与申请</a><a href="#security">02 · 账号与安全</a><a href="#usage">03 · 使用规范</a><a href="#inactive">04 · 闲置账号与回收</a><a href="#privacy">05 · 隐私与数据</a><a href="#changes">06 · 维护与服务变更</a><a href="#appeals">07 · 违规处理与申诉</a><a href="#termination">08 · 注销与服务终止</a><a href="#liability">09 · 服务限制与责任</a><a href="#minors">10 · 未成年人</a><a href="#updates">11 · 条款更新与争议</a></div>
+  </nav>
+  <article aria-label="完整使用条款">
+    <section id="service"><h2>01 · 服务与申请</h2>
+      <p>FurryHK 个人邮箱由 furryhk.cn 域名持有人管理，底层邮箱技术由阿里云企业邮箱提供，用于日常、合法的个人通信。本服务不是阿里云官方面向个人直接提供的 @aliyun.com 邮箱。</p>
+      <p>目前不收取邮箱开通或日常使用费用，账号由管理员人工审核。申请时请联系 <a href="mailto:furryhk@furryhk.cn">furryhk@furryhk.cn</a>，说明希望使用的邮箱名称、备用联系方式与用途；账号是否可用及具体配置以审核结果为准。</p>
+      <p>网页版、POP3／IMAP／SMTP、存储空间、发信数量及其他功能，以实际开通的邮箱版本、管理员配置和阿里云规则为准。本服务不承诺无限容量或永久免费；如未来调整收费方式，将另行告知并取得用户同意，不自动扣费。</p>
+      <p>使用前请阅读本条款以及实际邮箱版本适用的阿里云产品服务条款和反垃圾邮件规则。申请开通时，管理员应向用户提供阅读入口并确认其同意；仅浏览本页面不代表同意使用本服务。</p>
+    </section>
+    <section id="security"><h2>02 · 账号与安全</h2>
+      <p>申请信息应真实、有效，不得冒用他人身份。仅在开通、安全验证或法律规定确有需要时，按明确说明的用途提交必要信息；请勿在普通邮件中发送密码、验证码或无关的身份证件资料。</p>
+      <p>域名及邮箱管理权限由域名持有人掌握，用户获得对应邮箱账号的使用权限；用户邮件内容及其他依法享有的权益不因此转移给管理员。账号仅限获准使用者本人使用，不得售卖、转让、出借或共享。</p>
+      <p>请设置独立且足够复杂的密码，妥善保管客户端授权凭证，并使用实际版本支持的安全验证功能。发现盗用、异常登录或凭证泄露时，请及时修改密码、撤销相关授权并联系管理员。相关责任按各方实际过错及法律规定确定。</p>
+      <p>不建议将本邮箱作为金融、重要身份账号或其他关键服务的唯一找回方式。请为这些平台保留独立的备用联系方式，避免邮箱服务变化影响账号找回。</p>
+    </section>
+    <section id="usage"><h2>03 · 使用规范</h2>
+      <p>请遵守适用法律法规、他人合法权益及阿里云反垃圾邮件规范，不得利用本服务实施以下行为：</p>
+      <ul><li>发送未经收件人同意的批量广告、推广、垃圾邮件，或通过第三方平台变相发送垃圾信息；</li><li>发送钓鱼、诈骗、恶意软件、病毒或木马邮件，伪造身份、发件人地址或邮件头；</li><li>传播违法内容、泄露他人隐私或未经授权传播受版权保护的内容；</li><li>攻击系统、破解账号、利用漏洞读取未授权数据，或恶意占用资源、干扰其他用户；</li><li>从事非法经营、虚假交易或其他违法活动，或损害域名发信信誉及服务安全。</li></ul>
+      <p>管理员可根据实际风险限制批量发信或异常外发行为。具体配额和限制应以实际配置或通知为准。</p>
+    </section>
+    <section id="inactive"><h2>04 · 闲置账号与回收</h2>
+      <p>为合理使用有限账号资源，连续 180 天无可核实登录或使用记录的账号，可被列为闲置账号。这是 FurryHK 自身的运营规则，不代表阿里云所有邮箱版本均执行相同规则。</p>
+      <p><strong class="important">回收前，管理员应通过账号邮箱及已提供的备用联系方式通知用户，并预留不少于 15 天的确认和备份时间。</strong>用户可在通知期内登录使用，或联系管理员说明保留需求。通知期满仍无回复且确无使用记录时，方可回收。</p>
+      <p>账号删除可能导致邮件及相关数据不可恢复；是否存在回收站、保留期限及恢复能力，以实际邮箱版本为准。管理员不承诺删除后一定能够恢复；因违规或紧急安全风险采取的措施，按第 07 节处理。</p>
+    </section>
+    <section id="privacy"><h2>05 · 隐私与数据</h2>
+      <p>管理员处理申请与联系信息、账号标识，以及实际管理后台可见的登录、容量和发信等运营记录，目的仅限账号开通、身份核验、安全维护、问题处理和履行法定义务。具体可见范围取决于实际产品权限，不应超出必要范围。</p>
+      <p>邮件由底层邮箱服务处理和存储。具体存储地域、技术处理方式与保留周期，以实际开通版本、配置及其适用的官方政策为准；本页面不作未经核实的统一地域或永久保留承诺。</p>
+      <p>管理员不以售卖个人信息或邮件内容获利，不擅自阅读、披露用户邮件。因用户明确授权、依法提出的有权机关要求，或处理现实安全风险等合法且必要的情形确需处理时，应限制范围并依法记录；底层反垃圾和安全检测由实际产品规则决定。</p>
+      <p>请自行备份重要邮件和通讯录。用户可联系管理员申请查询、更正、删除申请资料、撤回可撤回的授权或注销账号；管理员将在核实身份后按适用规则处理。依法必须保留的信息可在必要期限内保留，并限制用途。</p>
+    </section>
+    <section id="changes"><h2>06 · 维护与服务变更</h2>
+      <p>维护、升级、网络或底层服务故障可能导致暂时无法登录、收发延迟或功能变化。对可预见的维护，管理员应尽量提前通知；发生故障后，应及时排查并协助向底层服务提供方反馈。</p>
+      <p>容量、功能、收费或其他影响用户主要权益的运营调整，应提前告知原因、范围及时间，并提供咨询和备份机会。底层服务的突发限制、法律要求或紧急安全事件无法提前通知的，应在条件允许时及时说明。</p>
+    </section>
+    <section id="appeals"><h2>07 · 违规处理与申诉</h2>
+      <p>发现疑似违规时，管理员可根据风险和情节采取提醒、限制外发、暂停账号等必要且适当的措施。对一般问题，应说明原因并提供改正机会；对正在进行的攻击、诈骗、垃圾邮件等紧急风险，可先采取保护措施，再在不妨碍调查及法律要求的前提下通知用户。</p>
+      <p>用户可通过 <a href="mailto:furryhk@furryhk.cn?subject=邮箱账号申诉">管理员邮箱</a> 申诉，说明账号、处理时间及相关证据。管理员应核实事实并告知处理结果；误判应及时纠正。涉及删除账号和邮件时，应明确提示后果，依法应立即处置的情形除外。</p>
+      <p>违规造成损失的，按实际行为、过错、因果关系及法律规定承担相应责任，不当然要求用户承担与其行为无关的全部损失。涉嫌违法犯罪的，依法配合有权机关处理。</p>
+    </section>
+    <section id="termination"><h2>08 · 注销与服务终止</h2>
+      <p>用户可以随时联系管理员申请注销。管理员核实身份后，应说明注销范围及数据后果，确认用户意愿后处理。注销前请完成备份，并更换其他平台绑定的邮箱；注销完成后使用权限终止。</p>
+      <p>严重违规、底层服务终止、域名或运营条件变化等，可能导致个别账号或整体服务终止。<strong class="important">对于可预见的整体停止运营，应至少提前 15 天通知，并留出备份、迁移时间。</strong>突发且无法提前通知的情况，应尽快说明并尽力提供迁移协助。</p>
+      <p>账号或服务终止后，数据按实际产品规则及适用法律处理。注销或回收可能无法撤销；不得将技术层面的回收站视为永久备份。</p>
+    </section>
+    <section id="liability"><h2>09 · 服务限制与责任</h2>
+      <p>本服务受域名、网络、底层产品及收件方规则影响，不承诺每封邮件即时送达、零中断或数据绝对安全；免费使用本服务不当然取得管理员与阿里云之间可能约定的 SLA 或赔付权益。</p>
+      <p>发生不可抗力、第三方拦截或其他故障时，应根据具体原因、各方过错、实际影响及法律规定确定责任。管理员应采取合理措施减少影响，不能以“免费”“按现状提供”或底层故障为由一概排除自身责任。</p>
+      <p>本条款不排除法律规定不能排除的责任，也不免除因故意或重大过失造成损失时依法应承担的责任。用户因账号安全或其他行为依法应承担的义务同样保留。</p>
+    </section>
+    <section id="minors"><h2>10 · 未成年人</h2>
+      <p>未满 18 周岁的用户，应在监护人指导下阅读条款，并在法律要求时取得监护人同意。涉及处理不满 14 周岁未成年人的个人信息，应依法取得监护人同意并采取相应保护措施。</p>
+      <p>仅凭未成年人使用服务，不推定其已获得监护人授权；监护人可联系管理员核实、提出异议或申请停止使用和删除相关信息。</p>
+    </section>
+    <section id="updates"><h2>11 · 条款更新与争议</h2>
+      <p>条款修订应在本页面标明发布日期、生效日期及主要变化，并通过适当渠道通知用户。涉及主要权益的变更，应合理提示、说明并保留沟通或退出渠道；依法需要另行取得同意的，不以沉默或继续浏览替代同意。</p>
+      <p>本版主要调整：明确免费及人工审核申请方式；区分本站 180 天闲置规则与底层产品规则；补充回收通知、备份、申诉和注销流程；澄清隐私处理范围和责任边界。旧版条款可在 <a href="https://github.com/furryyueyue/mail-terms/blob/a53bd82535fa83a0074253216bb20b80ae1dc10b/index.html" target="_blank" rel="noopener noreferrer">历史版本</a> 查看。</p>
+      <p>底层产品规则请查阅 <a href="https://terms.alicdn.com/legal-agreement/terms/b_end_product_protocol/20231121171207894/20231121171207894.html" target="_blank" rel="noopener noreferrer">阿里企业邮箱产品服务条款</a>、<a href="https://help.aliyun.com/zh/document_detail/438641.html" target="_blank" rel="noopener noreferrer">账号回收站说明</a> 及实际开通版本显示的其他官方规则。官方页面更新时，以依法适用的版本为准。</p>
+      <p>本条款与适用法律的强制性规定冲突时，以法律规定为准；部分条款无效不当然影响其他条款。发生争议，可先联系管理员协商；协商不成，依法向有管辖权的人民法院提起诉讼。</p>
+    </section>
+  </article>
+  <section class="help" aria-label="联系管理员"><h2>还有疑问？直接找我。</h2><p>申请、账号安全、注销或申诉，都可以发邮件到<br><a href="mailto:furryhk@furryhk.cn">furryhk@furryhk.cn</a>。请写明你的邮箱账号和问题，不要发送密码或验证码。</p><div class="actions"><a href="mailto:furryhk@furryhk.cn?subject=FurryHK邮箱服务咨询">联系管理员 ↗</a><a class="secondary" href="#top">回到顶部 ↑</a></div></section>
+  <footer>FurryHK · 谢谢你认真读完这些约定。</footer>
+</main>
+<script>
+(() => {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !Element.prototype.animate) return;
+  document.querySelectorAll('.top,.back,.terms-intro,.toc').forEach((element,index) => {
+    element.style.willChange = 'transform, opacity';
+    const motion = element.animate([{opacity:0,transform:'translate3d(0,12px,0)'},{opacity:1,transform:'translate3d(0,0,0)'}],{duration:1050,delay:index*65,easing:'cubic-bezier(.16,1,.3,1)',fill:'backwards'});
+    motion.finished.then(() => {element.style.willChange='';}, () => {element.style.willChange='';});
+  });
+})();
+</script>
 </body>
 </html>
